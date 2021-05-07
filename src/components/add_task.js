@@ -3,9 +3,7 @@ import React, { useState } from 'react';
 function AddTask() {
 
     const [task, SetTask] = useState([])
-
-    let nt= [""];
-    
+        
     function addtarea(e) {
         
         if (e.key === "Enter" && e.target.value !== "") {     
@@ -18,7 +16,7 @@ function AddTask() {
     }
 
     function deleteTask(e){
-        console.log(e.target.parentNode.parentNode)
+        
         e.target.parentNode.parentNode.remove();
     }
 
